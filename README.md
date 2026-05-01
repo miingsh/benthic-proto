@@ -1,5 +1,5 @@
-# DSS x Pristine Seas 🌊
-**Species classification for deep sea footage.**
+# 🌊 DSS x Pristine Seas
+Species classification for deep sea footage.
 
 ## 🛠️ Setup Instructions
 
@@ -112,13 +112,13 @@ ls -lh ~/.cache/clip/ViT-B-32.ptpython3 -c "import clip; print('before'); model,
 9. Request reviews/approvals from your teammates.
 
 
-## 💡 Notes
+### 💡 Notes
 
 * Models are **not included in the repo** (must be downloaded separately)
 
 ---
 
-## 📁 Project Structure (simplified)
+### 📁 Project Structure (simplified)
 
 ```
 seaanimals_proto/
