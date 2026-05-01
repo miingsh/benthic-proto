@@ -37,10 +37,10 @@ winget install ffmpeg
 
 4. Download both default and finetuned models and place them inside the seaanimals_proto folder
    
-* **Default YOLO-World model**
+* **Default YOLO-World model:**
   https://drive.google.com/file/d/1hh576zOzpUqgWSjIdSkR4EwgYQ8kH406/view?usp=drive_link
 
-* **Fine-tuned model (trained on JAMSTEC dataset of deep-sea animals)**
+* **Fine-tuned model (trained on JAMSTEC dataset of deep-sea animals):**
   https://drive.google.com/file/d/1rCyq4GZcG5UCqrl2SNNjmaHkLOZbWgyv/view?usp=drive_link
 
 4. cd into seaanimals_proto
