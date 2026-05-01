@@ -12,7 +12,7 @@ Species classification for deep sea footage.
     cd <repo-name>
     ```
 
-## ▶️ Running the Application: 
+## ▶️ Running the Application
 
 1. Set up virtual environment
  ```
