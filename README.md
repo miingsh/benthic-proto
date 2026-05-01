@@ -26,11 +26,11 @@ pip install -r requirements.txt
 ```
 
 3.  Install ffmpeg
-**macOS:**
+* **macOS:**
 ```
 brew install ffmpeg
 ```
-**Windows:**
+* **Windows:**
 ```
 winget install ffmpeg
 ```
