@@ -1,5 +1,5 @@
-# nat-geo
-Species classification for deep sea footage. 
+# DSS x Pristine Seas
+**Species classification for deep sea footage.**
 
 ## 🛠️ Setup Instructions
 
@@ -14,28 +14,46 @@ Species classification for deep sea footage.
 
 ## To run: 
 
-1. create env
-python -m venv venv
-source venv/bin/activate
+1. Set up virtual environment
+ ```
+    python -m venv venv
+    source venv/bin/activate
+ ```
 
-2. install deps
+2. Install dependencies
+```
 pip install -r requirements.txt
+```
 
-3.  install ffmpeg (mac)
+3.  Install ffmpeg
+**macOS:**
+```
 brew install ffmpeg
+```
+**Windows:**
+```
+winget install ffmpeg
+```
 
-4. install default and finetuned model and place them into the seaanimals_proto folder
-    
-    Default Yolo-World model: https://drive.google.com/file/d/1hh576zOzpUqgWSjIdSkR4EwgYQ8kH406/view?usp=drive_link
+4. Download both default and finetuned models and place them inside the seaanimals_proto folder
+   
+* **Default YOLO-World model**
+  https://drive.google.com/file/d/1hh576zOzpUqgWSjIdSkR4EwgYQ8kH406/view?usp=drive_link
 
-    Finetuned Yolo-World model (trained on JAMSTEC dataset on deep-sea animals): https://drive.google.com/file/d/1rCyq4GZcG5UCqrl2SNNjmaHkLOZbWgyv/view?usp=drive_link
+* **Fine-tuned model (trained on JAMSTEC dataset of deep-sea animals)**
+  https://drive.google.com/file/d/1rCyq4GZcG5UCqrl2SNNjmaHkLOZbWgyv/view?usp=drive_link
 
 4. cd into seaanimals_proto
+```
+cd seaanimals_proto
+```
 
-5. run app
+6. Run app
+```
 streamlit run model_runner.py
+```
 
-#### IF RUNNING INTO SSL ERROR ####
+#### ⚠️ If you run into SSL certificate errors: ####
 1. 
 ``` 
 python3 -m pip install --upgrade certifi requests urllib3 /Applications/Python\ 3.12/install\ Certificates.command 
@@ -92,3 +110,21 @@ ls -lh ~/.cache/clip/ViT-B-32.ptpython3 -c "import clip; print('before'); model,
 7. Open Github and go to `pull requests` tab. 
 8. Click "New Pull Request", select your branch, and add a description of the changes.
 9. Request reviews/approvals from your teammates.
+
+
+## 💡 Notes
+
+* Models are **not included in the repo** (must be downloaded separately)
+
+---
+
+## 📁 Project Structure (simplified)
+
+```
+seaanimals_proto/
+├── model_runner.py
+├── model_pipeline.py
+├── bytetrack_custom.yaml
+├── natgeobanner.png
+```
+
