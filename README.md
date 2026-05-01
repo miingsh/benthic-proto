@@ -1,4 +1,4 @@
-# DSS x Pristine Seas
+# DSS x Pristine Seas 🌊
 **Species classification for deep sea footage.**
 
 ## 🛠️ Setup Instructions
@@ -12,7 +12,7 @@
     cd <repo-name>
     ```
 
-## To run: 
+### To run: 
 
 1. Set up virtual environment
  ```
@@ -53,7 +53,7 @@ cd seaanimals_proto
 streamlit run model_runner.py
 ```
 
-#### ⚠️ If you run into SSL certificate errors: ####
+### ⚠️ If you run into SSL certificate errors: ###
 1. 
 ``` 
 python3 -m pip install --upgrade certifi requests urllib3 /Applications/Python\ 3.12/install\ Certificates.command 
